@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef3f8;
+    color: #333;
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 18px;
+    text-align: center;
+    border-bottom: 2px solid #dcdcdc;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 18px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #1a73e8;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 6px;
+    font-size: 32px;
+    color: #222;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+.card,
+.profile-card {
+    width: 340px;
+    margin: 30px auto;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card img,
+.profile-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h2,
+.profile-card h2,
+.card h3 {
+    margin: 18px 0 8px;
+    color: #333;
+    font-size: 24px;
+}
+
+.card p,
+.profile-card p {
+    color: #666;
+    margin: 0 20px 22px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card button,
+.profile-card button {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card button:hover,
+.profile-card button:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.02);
+}
+
+@media (max-width: 400px) {
+    .card,
+    .profile-card {
+        width: 92%;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin: 8px 10px;
+    }
+
+    .page-title {
+        font-size: 26px;
+    }
+}
